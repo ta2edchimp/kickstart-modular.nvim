@@ -24,10 +24,10 @@ return {
         opts = {
           -- NOTE: This would be necessary for e.g. the roslyn lsp that is
           -- different from the one that comes with nvim-lspconfig
-          -- registries = {
-          --   'github:mason-org/mason-registry',
-          --   'github:Crashdummyy/mason-registry',
-          -- },
+          registries = {
+            'github:mason-org/mason-registry',
+            'github:Crashdummyy/mason-registry',
+          },
         },
       },
       'mason-org/mason-lspconfig.nvim',
@@ -243,12 +243,6 @@ return {
               -- diagnostics = { disable = { 'missing-fields' } },
             },
           },
-        },
-
-        csharp_ls = {
-          -- NOTE: Read up what's possible here.
-          -- Also, read up what the alternative provides:
-          -- https://github.com/seblyng/roslyn.nvim
         },
       }
 
